@@ -1,0 +1,14 @@
+<div class="card text-center">
+  <div class="card-header">
+    {{ price.title }}
+  </div>
+  <div class="card-body mt-4">
+    <h5 class="card-title mb-4">
+      <span class="fs-2">$ {{ price.price }} /</span> mes
+    </h5>
+    <p *ngFor="let beneficio of price.beneficios" class="card-text mb-1">
+      {{ beneficio }}
+    </p>
+    <a href="#" class="btn btn-primary mt-4">{{ price.btnText }}</a>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<h1 class="text-center mt-5">Precio</h1>
+<p class="text-center">Adquiere uno de nuestros planes de promoción.</p>
+<section class="card-list mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor="let price of prices" class="col">
+      <app-price-card [price]="price"></app-price-card>
+    </div>
+  </div>
+</section>
